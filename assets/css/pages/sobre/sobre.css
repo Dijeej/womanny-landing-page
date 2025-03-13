@@ -1,0 +1,74 @@
+.sobre h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sobre-slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.sobre-foto img {
+  width: 100%;
+}
+
+.sobre-texto {
+  display: flex;
+  background-color: var(--color-feature);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.sobre-texto .depoimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sobre-texto .arrow-after img {
+  width: 4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+@media (max-width: 800px) {
+  .sobre-slide {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .sobre-texto {
+    font-size: 1.2rem;
+  }
+  .sobre-texto .arrow-after img {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-slide {
+    grid-template-columns: 1fr 2fr;
+  }
+  .sobre-texto {
+    font-size: 1rem;
+  }
+  .sobre-texto .arrow-after img {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobre-slide {
+    grid-template-columns: 1fr;
+  }
+  .sobre-texto {
+    font-size: 1rem;
+  }
+  .sobre-texto .arrow-after img {
+    width: 1.5rem;
+    top: 85%;
+  }
+}

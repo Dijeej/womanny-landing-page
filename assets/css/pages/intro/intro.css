@@ -1,0 +1,51 @@
+.intro-bg {
+  background: var(--color-light)
+    url("../../../images/global/details/seta-fundo.svg") no-repeat bottom 160px
+    left 30px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  box-shadow: inset 0 -100px var(--color-light);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.intro-content {
+  width: 35ch;
+  align-self: end;
+  padding-bottom: 140px;
+}
+
+.intro-content p,
+.intro-content a {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 850px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .intro-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .intro-content {
+    width: 98%;
+  }
+}

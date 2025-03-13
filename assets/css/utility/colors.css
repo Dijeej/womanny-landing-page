@@ -1,0 +1,21 @@
+:root {
+  --color-dark: #1e1e1e;
+  --color-middle: #b4b4b4;
+  --color-light: #e8e8e8;
+  --color-f1: #f1e1d6;
+  --color-feature: #ffbf00;
+  --color-gradient: linear-gradient(#ffbf00 0%, #f2a50c 100%);
+}
+
+.c-d {
+  color: var(--color-dark);
+}
+.c-m {
+  color: var(--color-middle);
+}
+.c-l {
+  color: var(--color-light);
+}
+.c-f1 {
+  color: var(--color-f1);
+}

@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  gap: 60px;
+}
+
+.header nav {
+  display: flex;
+}
+
+.header h1 {
+  position: relative;
+  padding-right: 0.75rem;
+}
+
+.header h1 a:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 2.5px;
+  height: 24px;
+  background: var(--color-middle);
+  border-radius: 0.25rem;
+  position: absolute;
+  top: -0rem;
+  right: 0rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li:first-child {
+  padding-left: 1.35rem;
+}
+
+.menu li > a {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--color-dark);
+  position: absolute;
+  top: 27px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.menu li > a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .header nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .header > a {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+.rodape-bg {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 1.1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rodape .midias-sociais {
+  display: flex;
+  gap: 1rem;
+}
+
+.rodape h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  .rodape {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .rodape .rodape-content {
+    align-items: center;
+    text-align: center;
+  }
+  .rodape-logo img {
+    display: flex;
+    justify-content: center;
+  }
+}

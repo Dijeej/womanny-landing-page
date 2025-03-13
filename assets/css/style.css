@@ -1,0 +1,21 @@
+/*################# UTILITY ############### */
+@import "./utility/colors.css";
+@import "./utility/typography.css";
+@import "./utility/normalize.css";
+/*################# GLOBAL ############### */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/rodape.css";
+
+/*################# COMPONENTS ############### */
+@import "./components/btn-1.css";
+@import "./components/menu-mobile.css";
+@import "./components/word-feature.css";
+@import "./components/title-article.css";
+
+/*################# PAGES ############### */
+@import "./pages/intro/intro.css";
+@import "./pages/servicos/servicos.css";
+@import "./pages/eventos/eventos.css";
+@import "./pages/portifolio/portifolio.css";
+@import "./pages/sobre/sobre.css";

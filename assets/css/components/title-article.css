@@ -1,0 +1,19 @@
+.title-article,
+.title-article-c_l {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-transform: lowercase;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  margin-top: 4rem;
+}
+
+.title-article-c_l {
+  color: var(--color-light);
+}
+
+.title-article span,
+.title-article-c_l span {
+  color: var(--color-feature);
+}
